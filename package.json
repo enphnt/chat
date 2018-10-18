@@ -14,7 +14,7 @@
     "ws": "^6.1.0"
   },
   "scripts": {
-    "start": "PORT=3002 react-scripts start",
+    "start": "node ./server/app.js & PORT=3002 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

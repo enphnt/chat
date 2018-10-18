@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Socket Saga Chat",
+  "name": "Chat App using React, Redux-Saga, and Web Sockets",
   "icons": [
     {
       "src": "favicon.ico",
