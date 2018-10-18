@@ -24,16 +24,16 @@ const getRandomColor = () => {
 const style = () => {
   return {
     fontWeight: 900,
+    textShadow: "2px 2px darkblue",
     color: getRandomColor(),
   }
 }
 
-const Message = ({message = "i'm a default message", author = "default user"}) => (
+const Message = ({message, author}) => (
   <p>
     <strong style={style()}>{author}:</strong> {message}
   </p>
 );
-
 
 Message.PropTypes = {
   author: PropTypes.string.isRequired,

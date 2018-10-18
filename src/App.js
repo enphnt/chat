@@ -7,7 +7,7 @@ import AddMessage from "./components/AddMessage";
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div id="container">
         <Sidebar />
         <section id="main">
           <MessagesList />
@@ -17,5 +17,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;

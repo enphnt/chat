@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Sidebar = ({ users = ["default user"] }) => (
+const Sidebar = ({ users = [{name: "default user"}] }) => (
 	<aside id="sidebar">
 		<ul>
 			{users.map(user => (
@@ -9,7 +9,7 @@ const Sidebar = ({ users = ["default user"] }) => (
 			))}
 		</ul>
 	</aside>
-)
+);
 
 Sidebar.PropTypes = {
 	users: PropTypes.arrayOf(
@@ -20,4 +20,4 @@ Sidebar.PropTypes = {
 	).isRequired
 }
 
-export default Sidebar
+export default Sidebar;
