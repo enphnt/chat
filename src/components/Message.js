@@ -1,9 +1,36 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Message = ({message, author}) => (
+const getRandomColor = () => {
+  const colors =[
+    "#8dd3c7",
+    "#ffffb3",
+    "#bebada",
+    "#fb8072",
+    "#80b1d3",
+    "#fdb462",
+    "#b3de69",
+    "#fccde5",
+    "#d9d9d9",
+    "#bc80bd",
+    "#ccebc5",
+    "#ffed6f",
+  ]
+  const randomColor = Math.floor(Math.random() * 12);
+  console.log(randomColor)
+  return colors[randomColor];
+}
+
+const style = () => {
+  return {
+    fontWeight: 900,
+    color: getRandomColor(),
+  }
+}
+
+const Message = ({message = "i'm a default message", author = "default user"}) => (
   <p>
-    <i>{author}:</i> {message}
+    <strong style={style()}>{author}:</strong> {message}
   </p>
 );
 

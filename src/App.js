@@ -8,10 +8,10 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        {/* <Sidebar /> */}
+        <Sidebar />
         <section id="main">
-          {/* <MessagesList id="messages-list"/> */}
-          <AddMessage id="new-message"/>
+          <MessagesList />
+          <AddMessage />
         </section>
       </div>
     );

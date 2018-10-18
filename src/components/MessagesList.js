@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Message from './Message'
 
-const MessagesList = ({messages}) => (
+const MessagesList = ({messages = ["hey", "sup?"]}) => (
   <section id="messages-list">
     <ul>
       {messages.map(message => (
@@ -11,7 +11,6 @@ const MessagesList = ({messages}) => (
           {...message}
         />
       ))}
-
     </ul>
   </section>
 );

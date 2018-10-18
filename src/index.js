@@ -10,7 +10,7 @@ import chat from "./reducers";
 const store = createStore(chat);
 
 ReactDOM.render(
-  <Provider>
+  <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('root'));
