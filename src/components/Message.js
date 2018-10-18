@@ -16,9 +16,8 @@ const getRandomColor = () => {
     "#ccebc5",
     "#ffed6f",
   ]
-  const randomColor = Math.floor(Math.random() * 12);
-  console.log(randomColor)
-  return colors[randomColor];
+  const randomInt = Math.floor(Math.random() * 12);
+  return colors[randomInt];
 }
 
 const style = () => {

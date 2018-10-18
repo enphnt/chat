@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Sidebar = ({ users = [{name: "default user"}] }) => (
+const Sidebar = ({ users = [{id: 100, name: "default user"}] }) => (
 	<aside id="sidebar">
 		<ul>
 			{users.map(user => (

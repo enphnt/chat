@@ -3,13 +3,14 @@ import PropTypes from "prop-types";
 
 const AddMessage = (props) => {
   let input;
+  const { dispatch } = props;
 
   return (
     <section id="new-message">
       <input
         onKeyPress={(e) => {
           if (e.key === "Enter") {
-            props.dispatch(input.value, "Me")
+            dispatch(input.value, "Me")
             input.value = ""
           }
         }}

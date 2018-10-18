@@ -10,5 +10,5 @@ const mapDispatchToProps = dispatch => ({
 
 export const AddMessage = connect(
   () => ({}),
-  mapDispatchToProps
+  mapDispatchToProps,
 )(AddMessagePresentationalComponent);
